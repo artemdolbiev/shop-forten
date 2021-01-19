@@ -1,0 +1,151 @@
+.header {
+
+  &-top {
+    &__container {
+      max-width: 1130px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      font-family: 'PT Sans';
+      font-size: 0.75rem;
+      color: #969696;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__telephone {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #ffffff;
+
+    &::before {
+      content: '';
+      background-image: url('/assets/img/tel.svg');
+      background-size: cover;
+      background-position: 50% 50%;
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__schedule {
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #ffffff;
+  }
+
+  &-menu {
+    background-color: #0f0f0f;
+
+    &__container {
+      max-width: 1130px;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-height: 80px;
+      margin: 0 auto;
+    }
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-logo {
+    padding: 15px 0 16px;
+    &__link {
+      font-family: 'PostNoBillsJaffna-Bold';
+      font-weight: 700;
+      font-size: 2.25rem;
+      line-height: 3.375rem;
+    }
+  }
+
+  &-navbar {
+    
+    &__list {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__item {
+      padding: 29px 20px 25px;
+      transition: background-color 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        & .header-navbar__link {
+          color: #ffffff;
+        }
+      }
+
+      &:nth-of-type(1) {
+        &:hover {
+          background-color: #1f1f1f;
+        }
+      }
+      &:nth-of-type(2) {
+        &:hover {
+          background-color: #1f1f1f;
+        }
+      }
+      &:nth-of-type(3) {
+        &:hover {
+          background-color: #1f1f1f;
+        }
+      }
+    
+      &:nth-of-type(4) {
+        margin-left: 20px;
+      }
+      &:nth-child(5) {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      font-family: 'PT Sans';
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      text-transform: uppercase;
+      color: #969696;
+      transition: color 0.5s;
+    }
+  }
+}
+
+
+
+.header-user__link {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('/assets/img/icon-logo.svg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 14px;
+    height: 13px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
