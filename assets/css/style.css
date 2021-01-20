@@ -574,7 +574,7 @@ p {
 
 .header__telephone::before {
   content: '';
-  background-image: url("/assets/img/tel.svg");
+  background-image: url("../img/tel.svg");
   background-size: cover;
   background-position: 50% 50%;
   width: 13px;
@@ -759,7 +759,7 @@ p {
 .header-user__link::before {
   content: '';
   position: absolute;
-  background-image: url("/assets/img/icon-logo.svg");
+  background-image: url("../img/icon-logo.svg");
   background-size: cover;
   background-position: 50% 50%;
   width: 14px;
@@ -771,7 +771,7 @@ p {
 }
 
 .section-forten {
-  background-image: url("/assets/img/section-content.png");
+  background-image: url("../img/section-content.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -947,7 +947,7 @@ p {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  background-image: url("/assets/img/new.png");
+  background-image: url("../img/new.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -992,7 +992,7 @@ p {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  background-image: url("/assets/img/content.png");
+  background-image: url("../img/content.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1158,7 +1158,7 @@ p {
 }
 
 .section-info {
-  background-image: url("/assets/img/section-info.png");
+  background-image: url("../img/section-info.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
