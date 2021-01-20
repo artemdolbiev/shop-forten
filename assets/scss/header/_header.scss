@@ -59,7 +59,7 @@
 
     &::before {
       content: '';
-      background-image: url('/assets/img/tel.svg');
+      background-image: url('../img/tel.svg');
       background-size: cover;
       background-position: 50% 50%;
       width: 13px;
@@ -288,7 +288,7 @@
   &::before {
     content: '';
     position: absolute;
-    background-image: url('/assets/img/icon-logo.svg');
+    background-image: url('../img/icon-logo.svg');
     background-size: cover;
     background-position: 50% 50%;
     width: 14px;
