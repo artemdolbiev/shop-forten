@@ -11,10 +11,23 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: 44px;
       font-family: 'PT Sans';
-      font-size: 0.75rem;
       color: #969696;
+
+      @include sm-min {
+        min-height: 44px;
+        font-size: 0.75rem;
+      }
+
+      @include xs-min {
+        min-height: 35px;
+        font-size: 0.6rem;
+      }
+
+      @include xs {
+        min-height: 25px;
+        font-size: 0.43rem;
+      }
     }
   }
 
@@ -24,10 +37,25 @@
 
   &__telephone {
     position: relative;
-    padding-left: 30px;
-    padding-right: 16px;
-    margin-right: 16px;
     border-right: 1px solid #969696;
+
+    @include sm-min {
+      padding-left: 30px;
+      padding-right: 16px;
+      margin-right: 16px;
+    }
+
+    @include sm-xs {
+      padding-left: 25px;
+      padding-right: 12px;
+      margin-right: 12px;
+    }
+    @include xs {
+      padding-left: 15px;
+      padding-right: 6px;
+      margin-right: 6px;
+    }
+
 
     &::before {
       content: '';
@@ -45,9 +73,21 @@
   }
 
   &__schedule {
-    padding-right: 16px;
-    margin-right: 16px;
     border-right: 1px solid #969696;
+
+    @include sm-min {
+      padding-right: 16px;
+      margin-right: 16px;
+    }
+
+    @include sm-xs {
+      padding-right: 12px;
+      margin-right: 12px;
+    }
+    @include xs {
+      padding-right: 6px;
+      margin-right: 6px;
+    }
   }
 
   &-menu {
@@ -77,15 +117,110 @@
   }
 
   &-navbar {
-    
+    display: flex;
+    &__btn {
+      position: relative;
+
+      width: 30px;
+      height: 22.5px;
+      margin: 28px 0;
+
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      transform: rotate(0deg);
+
+      @include md-min {
+        display: none;
+      }
+
+      &-row {
+        position: absolute;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 3px;
+
+        transition: 0.25s ease-in-out;
+        transform: rotate(0deg);
+
+        opacity: 1;
+        border-radius: 3px;
+        background: #ffffff;
+
+        &:nth-child(1) {
+          top: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 9px;
+        }
+
+        &:nth-child(4) {
+          top: 18px;
+        }
+      }
+
+      &--active div:nth-child(1) {
+        top: 9px;
+        left: 50%;
+  
+        width: 0;
+      }
+  
+      &--active div:nth-child(2) {
+        transform: rotate(45deg);
+      }
+  
+      &--active div:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+  
+      &--active div:nth-child(4) {
+        top: 9px;
+        left: 50%;
+  
+        width: 0;
+      }
+    }
+
     &__list {
-      display: flex;
-      justify-content: space-around;
+
+      position: relative;
+
+      @include md-min {
+        display: flex;
+        justify-content: space-around;
+      }
+      @include md {
+        display: none;
+      }
+      &.header-navbar__list--active {
+        position: absolute;
+        right: 0;
+        display: block;
+        text-align: center;
+        background-color: rgba(0, 0, 6, 0.9);
+        z-index: 4;
+
+        @include sm-min {
+          top: 124px;
+        }
+        @include sm-xs {
+          top: 115px;
+        }
+        @include xs {
+          top: 105px;
+        }
+      }
     }
 
     &__item {
       padding: 29px 20px 25px;
       transition: background-color 0.5s;
+      max-height: 80px;
       cursor: pointer;
 
       &:hover {
@@ -112,9 +247,15 @@
     
       &:nth-of-type(4) {
         margin-left: 20px;
+        @include md {
+          display: none;
+        }
       }
       &:nth-child(5) {
         padding-right: 0;
+        @include md {
+          display: none;
+        }
       }
     }
 
@@ -133,7 +274,16 @@
 
 .header-user__link {
   position: relative;
-  padding-left: 30px;
+
+  @include sm-min {
+    padding-left: 30px;
+  }
+  @include sm-xs {
+    padding-left: 20px;
+  }
+  @include xs {
+    padding-left: 15px;
+  }
 
   &::before {
     content: '';
@@ -149,3 +299,5 @@
     left: 0;
   }
 }
+
+

@@ -35,9 +35,18 @@ p {
 
 .title {
   font-weight: 700;
-  font-size: 2.25rem;
   line-height: 3rem;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  @include xs-min {
+    font-size: 2.25rem;
+  }
+  @include sm-xs {
+    font-size: 1.75rem;
+  }
+  @include xs {
+    font-size: 1.45rem;
+  }
 }

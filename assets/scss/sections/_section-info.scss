@@ -1,0 +1,152 @@
+.section-info {
+  background-image: url('/assets/img/section-info.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    max-width: 1130px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    @include xl {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__shop {
+
+    @include xl-min {
+      flex: 0 0 33.33%;
+    }
+    @include xl-md {
+      flex: 0 0 50%;
+    }
+    @include md {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__categories {
+    @include xl-min {
+      flex: 0 0 33.33%;
+      margin-left: 30px;
+    }
+    @include xl-md {
+      flex: 0 0 50%;
+      padding-left: 20px;
+    }
+    @include md {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__mailing {
+    @include xl-min {
+      flex: 0 0 33.33%;
+    }
+    @include xl {
+      flex: 0 0 100%;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include lg {
+      text-align: center;
+    }
+  }
+}
+
+.section-shop__text {
+  font-family: 'PT Sans';
+  font-size: 0.875rem;
+  line-height: 1.36rem;
+
+  color: #ffffff;
+  @include xl-min {
+    margin-bottom: 100px;
+  }
+  @include xl {
+    margin-bottom: 20px;
+  }
+}
+
+.section-categoties__name {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 20px 20px 0;
+  background-color: #0f0f0f;
+
+  font-family: 'PT Sans';
+  font-size: 0.875rem;
+  line-height: 1.36rem;
+  color: #d0d0d0;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+}
+
+.section-mailing {
+
+  &__text {
+    font-family: 'PT Sans';
+    font-size: 0.875rem;
+    line-height: 1.36rem;
+    margin-bottom: 37px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 44px;
+    width: 100%;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      font-family: 'PT Sans';
+      font-size: 0.875rem;
+      line-height: 1.36rem;
+      color: #969696;
+      padding-left: 10px;
+    }
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    border: none;
+    font-family: 'PT Sans';
+    font-size: 0.875rem;
+    line-height: 1.36rem;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    cursor: pointer;
+
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+  }
+}
