@@ -458,7 +458,7 @@ template {
 
 @font-face {
   font-family: 'PostNoBillsJaffna-Regular';
-  src: url(/libs/fonts/PostNoBillsJaffna-Regular.ttf) format("truetype");
+  src: url(../libs/fonts/PostNoBillsJaffna-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -616,7 +616,7 @@ p {
 }
 
 .header-logo__link {
-  font-family: 'PostNoBillsJaffna-Bold';
+  font-family: 'Post No Bills Jaffna';
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 3.375rem;
@@ -807,7 +807,7 @@ p {
 
 .section-content__title {
   position: relative;
-  font-family: 'PostNoBillsJaffna-Bold';
+  font-family: 'Post No Bills Jaffna';
   font-weight: 700;
   font-size: 4rem;
   line-height: 3.75rem;
