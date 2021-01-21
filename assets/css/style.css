@@ -457,33 +457,10 @@ template {
 }
 
 @font-face {
-  font-family: 'PostNoBillsJaffna-Regular';
-  src: url(../libs/fonts/PostNoBillsJaffna-Regular.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PostNoBillsJaffna-Medium';
-  src: url(/libs/fonts/PostNoBillsJaffna-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PostNoBillsJaffna-SemiBold';
-  src: url(/libs/fonts/PostNoBillsJaffna-SemiBold.ttf) format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PostNoBillsJaffna-Bold';
-  src: url(/libs/fonts/PostNoBillsJaffna-Bold.ttf) format("truetype");
-  font-weight: 700;
+  font-family: 'post no bills jaffna-bold';
+  src: url(../fonts/PostNoBillsJaffna-Bold.ttf) format("truetype");
+  src: url(../fonts/PostNoBillsJaffna-Bold.eot), url(../fonts/PostNoBillsJaffna-Bold.woff2) format("woff2"), url(../fonts/PostNoBillsJaffna-Bold.woff) format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -616,7 +593,7 @@ p {
 }
 
 .header-logo__link {
-  font-family: 'Post No Bills Jaffna';
+  font-family: 'post no bills jaffna-bold';
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 3.375rem;
@@ -793,7 +770,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 160px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -807,11 +783,10 @@ p {
 
 .section-content__title {
   position: relative;
-  font-family: 'Post No Bills Jaffna';
+  font-family: 'post no bills jaffna-bold';
   font-weight: 700;
   font-size: 4rem;
   line-height: 3.75rem;
-  padding: 100px 68px 10px 67px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -820,7 +795,6 @@ p {
   content: '';
   position: absolute;
   border: 2px solid #FFFFFF;
-  width: 179px;
   left: 68px;
 }
 
@@ -1323,6 +1297,15 @@ p {
     min-height: 35px;
     font-size: 0.6rem;
   }
+  .section-content {
+    padding-top: 160px;
+  }
+  .section-content__title {
+    padding: 100px 68px 10px 67px;
+  }
+  .section-content__title::after {
+    width: 179px;
+  }
   .collection-old__link {
     padding: 12px 28px;
     margin-bottom: 100px;
@@ -1771,8 +1754,18 @@ p {
   .section-forten {
     height: calc(100vh - 105px);
   }
+  .section-content {
+    padding-top: 120px;
+  }
   .section-content__inner {
     margin-bottom: 50px;
+  }
+  .section-content__title {
+    padding: 90px 61px 10px 60px;
+  }
+  .section-content__title::after {
+    bottom: 0;
+    width: 175px;
   }
   .section-inner__text {
     font-size: 0.8125rem;

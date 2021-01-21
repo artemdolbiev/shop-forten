@@ -28,8 +28,16 @@
 .section-content {
   display: flex;
   justify-content: center;
-  padding-top: 160px;
+  
   align-items: center;
+
+  @include xs-min {
+    padding-top: 160px;
+  }
+
+  @include xs {
+    padding-top: 120px;
+  }
 
   &__inner {
     border: 4px solid #ffffff;
@@ -50,20 +58,33 @@
 
   &__title {
     position: relative;
-    font-family: 'Post No Bills Jaffna';
+    font-family: 'post no bills jaffna-bold';
     font-weight: 700;
     font-size: 4rem;
     line-height: 3.75rem;
-    padding: 100px 68px 10px 67px;
     text-align: center;
     text-transform: uppercase;
+
+    @include xs-min {
+      padding: 100px 68px 10px 67px;
+    }
+    @include xs {
+      padding: 90px 61px 10px 60px;
+    }
+
 
     &::after {
       content: '';
       position: absolute;
       border: 2px solid #FFFFFF;
-      width: 179px;
       left: 68px;
+      @include xs-min{
+        width: 179px;
+      }
+      @include xs{
+        bottom: 0;
+        width: 175px;
+      }
     }
 
   }

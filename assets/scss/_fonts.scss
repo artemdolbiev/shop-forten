@@ -1,32 +1,13 @@
-// Fonts
-@font-face {
-  font-family: 'PostNoBillsJaffna-Regular';
-  src:  url(../libs/fonts/PostNoBillsJaffna-Regular.ttf) format('truetype');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
+
 
 @font-face {
-	font-family: 'PostNoBillsJaffna-Medium';
-	src:  url(/libs/fonts/PostNoBillsJaffna-Medium.ttf) format('truetype');
-	  font-weight: 500;
+	font-family: 'post no bills jaffna-bold';
+	src:  url(../fonts/PostNoBillsJaffna-Bold.ttf) format('truetype');
+	src:  url(../fonts/PostNoBillsJaffna-Bold.eot),
+				url(../fonts/PostNoBillsJaffna-Bold.woff2) format('woff2'),
+				url(../fonts/PostNoBillsJaffna-Bold.woff) format('woff');
+	  font-weight: bold;
 	  font-style: normal;
 	  font-display: swap;
 }
 
-@font-face {
-	font-family: 'PostNoBillsJaffna-SemiBold';
-	src:  url(/libs/fonts/PostNoBillsJaffna-SemiBold.ttf) format('truetype');
-	  font-weight: 600;
-	  font-style: normal;
-	  font-display: swap;
-}
-
-@font-face {
-	font-family: 'PostNoBillsJaffna-Bold';
-	src:  url(/libs/fonts/PostNoBillsJaffna-Bold.ttf) format('truetype');
-	  font-weight: 700;
-	  font-style: normal;
-	  font-display: swap;
-}
