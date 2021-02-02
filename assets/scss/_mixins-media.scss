@@ -220,6 +220,12 @@
   }
 }
 
+@mixin xs-xx {
+  @media (max-width: $xs - 0.2) and (min-width: $xx) {
+    @content;
+  }
+}
+
 /* xx */
 @mixin xx-min {
   @media (min-width: $xx) {
